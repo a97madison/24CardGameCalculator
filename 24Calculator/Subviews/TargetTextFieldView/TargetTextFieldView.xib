@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="iN0-l3-epB" customClass="TargetTextFieldView" customModule="_24Calculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-eR-hep">
+                    <rect key="frame" x="17.333333333333336" y="11.666666666666664" width="124.33333333333331" height="37"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Target = ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="32" name="Nunito-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-Fi-S7j">
+                    <rect key="frame" x="149.66666666666666" y="6" width="69" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="lbG-kr-8jL"/>
+                        <constraint firstAttribute="width" constant="69" id="r4f-Hb-duo"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="18">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="32" name="Nunito-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miL-tC-icH">
+                    <rect key="frame" x="166.33333333333334" y="11.333333333333332" width="35.666666666666657" height="37.333333333333343"/>
+                    <attributedString key="attributedText">
+                        <fragment content="24">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="32" name="Nunito-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-Ev-Brf">
+                    <rect key="frame" x="212.66666666666666" y="11.333333333333332" width="60.333333333333343" height="37.666666666666671"/>
+                    <attributedString key="attributedText">
+                        <fragment content="+ ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="32" name="Nunito-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="④">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tW1-67-Ae5"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FtI-Ev-Brf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AaD-Pu-LZ2"/>
+                <constraint firstItem="ZIv-Fi-S7j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IBo-b3-jr6"/>
+                <constraint firstItem="FtI-Ev-Brf" firstAttribute="leading" secondItem="ZIv-Fi-S7j" secondAttribute="trailing" constant="-6" id="Mc2-np-HFy"/>
+                <constraint firstItem="miL-tC-icH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gVN-Y2-5wk"/>
+                <constraint firstItem="ZIv-Fi-S7j" firstAttribute="leading" secondItem="iH1-eR-hep" secondAttribute="trailing" constant="8" id="sZK-zc-dV1"/>
+                <constraint firstItem="miL-tC-icH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ta4-Cg-yi8"/>
+                <constraint firstItem="ZIv-Fi-S7j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uCN-M5-ZhU"/>
+                <constraint firstItem="iH1-eR-hep" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xbj-HC-que"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <connections>
+                <outlet property="equationLabel" destination="FtI-Ev-Brf" id="sCH-u3-f5K"/>
+                <outlet property="targetLabel" destination="iH1-eR-hep" id="Eoc-yn-pl9"/>
+                <outlet property="targetTextField" destination="ZIv-Fi-S7j" id="MM4-Sx-iob"/>
+                <outlet property="twentyFourLabel" destination="miL-tC-icH" id="41v-X6-VTb"/>
+            </connections>
+            <point key="canvasLocation" x="817.60000000000002" y="-19.211822660098523"/>
+        </view>
+    </objects>
+</document>

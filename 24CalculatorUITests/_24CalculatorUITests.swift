@@ -1,13 +1,13 @@
 //
-//  TwentySomethingCalculatorUITests.swift
-//  TwentySomethingCalculatorUITests
+//  _24CalculatorUITests.swift
+//  24CalculatorUITests
 //
 //  Created by The Madisons on 2021-01-26.
 //
 
 import XCTest
 
-class TwentySomethingCalculatorUITests: XCTestCase {
+class _24CalculatorUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

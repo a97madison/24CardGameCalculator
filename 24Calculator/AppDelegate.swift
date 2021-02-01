@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TwentySomethingCalculator
+//  24Calculator
 //
 //  Created by The Madisons on 2021-01-26.
 //

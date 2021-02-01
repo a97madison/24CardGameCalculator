@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_24Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TARGET" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mnj-7t-trG">
+                                <rect key="frame" x="82" y="44" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="rsT-Xu-7CY"/>
+                                    <constraint firstAttribute="width" constant="250" id="tW0-dA-Ge2"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCG-wJ-8m4">
+                                <rect key="frame" x="82" y="94" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Tx1-va-G5y"/>
+                                    <constraint firstAttribute="width" constant="250" id="nuY-3c-u08"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Card Value #1">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemGreenColor"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPO-TN-jIW">
+                                <rect key="frame" x="82" y="144" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ZKe-Dw-VcZ"/>
+                                    <constraint firstAttribute="width" constant="250" id="vPJ-Gh-c9z"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Card Value #2">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemGreenColor"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGs-f3-DOS">
+                                <rect key="frame" x="82" y="194" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6kh-me-1Y7"/>
+                                    <constraint firstAttribute="width" constant="250" id="7FU-LH-A61"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Card Value #3">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemGreenColor"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI6-DQ-HuZ">
+                                <rect key="frame" x="20" y="294" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="FPd-LU-0We"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Calculate Solutions"/>
+                                <connections>
+                                    <action selector="calculateAllSolutionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lET-RI-hiO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ycs-An-Xpq">
+                                <rect key="frame" x="82" y="244" width="250" height="42"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="kNF-g6-UKH"/>
+                                    <constraint firstAttribute="width" constant="250" id="xao-WS-pxt"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Card Value #4">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemGreenColor"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yf7-A2-8zq">
+                                <rect key="frame" x="20" y="372" width="374" height="490"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="le9-iR-UmQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="len-Km-E0X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="No solutions"/>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-9V-ho5">
+                                        <rect key="frame" x="0.0" y="78" width="374" height="412"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="le9-iR-UmQ" firstAttribute="trailing" secondItem="dbO-9V-ho5" secondAttribute="trailing" id="3zb-Zb-6IR"/>
+                                    <constraint firstAttribute="bottom" secondItem="dbO-9V-ho5" secondAttribute="bottom" id="Eph-bp-m8m"/>
+                                    <constraint firstItem="le9-iR-UmQ" firstAttribute="leading" secondItem="yf7-A2-8zq" secondAttribute="leading" id="NCo-Fz-KFi"/>
+                                    <constraint firstItem="le9-iR-UmQ" firstAttribute="leading" secondItem="dbO-9V-ho5" secondAttribute="leading" id="UaF-hI-OlL"/>
+                                    <constraint firstAttribute="trailing" secondItem="le9-iR-UmQ" secondAttribute="trailing" id="ZED-Wd-DcT"/>
+                                    <constraint firstItem="dbO-9V-ho5" firstAttribute="top" secondItem="le9-iR-UmQ" secondAttribute="bottom" constant="8" symbolic="YES" id="bvS-qF-XvX"/>
+                                    <constraint firstItem="le9-iR-UmQ" firstAttribute="top" secondItem="yf7-A2-8zq" secondAttribute="top" id="mh3-Lx-g3Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.42351566466625762" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="leading" secondItem="RPO-TN-jIW" secondAttribute="leading" id="0QY-zx-V3G"/>
+                            <constraint firstItem="yf7-A2-8zq" firstAttribute="top" secondItem="KI6-DQ-HuZ" secondAttribute="bottom" constant="8" symbolic="YES" id="3C2-uK-UtC"/>
+                            <constraint firstItem="mnj-7t-trG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3wZ-Rd-FCh"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="centerX" secondItem="KI6-DQ-HuZ" secondAttribute="centerX" id="6ty-7u-n31"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="leading" secondItem="mnj-7t-trG" secondAttribute="leading" id="KWV-bx-IlE"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="top" secondItem="fGs-f3-DOS" secondAttribute="bottom" constant="8" symbolic="YES" id="LCG-bx-Lgy"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lwb-Ng-lkD"/>
+                            <constraint firstItem="KI6-DQ-HuZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mbq-Lg-d91"/>
+                            <constraint firstItem="yf7-A2-8zq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NJT-CG-FNp"/>
+                            <constraint firstItem="RPO-TN-jIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1K-Ja-4RS"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="trailing" secondItem="fGs-f3-DOS" secondAttribute="trailing" id="XHk-0R-PrB"/>
+                            <constraint firstItem="mnj-7t-trG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aRW-aH-vCP"/>
+                            <constraint firstItem="mnj-7t-trG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aWg-rl-f7M"/>
+                            <constraint firstItem="mCG-wJ-8m4" firstAttribute="top" secondItem="mnj-7t-trG" secondAttribute="bottom" constant="8" symbolic="YES" id="eph-tQ-yja"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="trailing" secondItem="mnj-7t-trG" secondAttribute="trailing" id="fPP-Gr-noZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yf7-A2-8zq" secondAttribute="trailing" constant="20" id="hZL-5U-jgd"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="leading" secondItem="mCG-wJ-8m4" secondAttribute="leading" id="jpl-mb-Qff"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="trailing" secondItem="RPO-TN-jIW" secondAttribute="trailing" id="jyY-a9-QTf"/>
+                            <constraint firstItem="mCG-wJ-8m4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ko8-xF-kGX"/>
+                            <constraint firstItem="fGs-f3-DOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeM-oQ-cdj"/>
+                            <constraint firstItem="mCG-wJ-8m4" firstAttribute="top" secondItem="mnj-7t-trG" secondAttribute="bottom" constant="8" symbolic="YES" id="rDQ-N3-9ej"/>
+                            <constraint firstItem="yf7-A2-8zq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uMR-Jr-zgg"/>
+                            <constraint firstItem="KI6-DQ-HuZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wVd-kA-rjH"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="trailing" secondItem="mCG-wJ-8m4" secondAttribute="trailing" id="whT-56-ZWl"/>
+                            <constraint firstItem="RPO-TN-jIW" firstAttribute="top" secondItem="mCG-wJ-8m4" secondAttribute="bottom" constant="8" symbolic="YES" id="wq6-b7-dOG"/>
+                            <constraint firstItem="fGs-f3-DOS" firstAttribute="top" secondItem="RPO-TN-jIW" secondAttribute="bottom" constant="8" symbolic="YES" id="xS7-kR-9BY"/>
+                            <constraint firstItem="KI6-DQ-HuZ" firstAttribute="top" secondItem="Ycs-An-Xpq" secondAttribute="bottom" constant="8" symbolic="YES" id="xvp-25-KcY"/>
+                            <constraint firstItem="Ycs-An-Xpq" firstAttribute="leading" secondItem="fGs-f3-DOS" secondAttribute="leading" id="ye2-pD-R53"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="KI6-DQ-HuZ" id="XSB-8V-qbQ"/>
+                        <outlet property="card1Value" destination="mCG-wJ-8m4" id="OQ8-qb-bc9"/>
+                        <outlet property="card2Value" destination="RPO-TN-jIW" id="Gta-Xj-zpj"/>
+                        <outlet property="card3Value" destination="fGs-f3-DOS" id="Znx-0s-X7Q"/>
+                        <outlet property="card4Value" destination="Ycs-An-Xpq" id="SRk-A6-Vn9"/>
+                        <outlet property="targetValue" destination="mnj-7t-trG" id="eGG-99-GMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

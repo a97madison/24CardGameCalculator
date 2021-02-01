@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReusableTextFieldView" customModule="_24Calculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p89-r2-azV">
+                    <rect key="frame" x="172.5" y="6" width="69" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="6Ku-m6-GPW"/>
+                        <constraint firstAttribute="height" constant="48" id="zOV-ke-RXg"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="24">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="32" name="Nunito-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-Zw-2I7">
+                    <rect key="frame" x="20" y="30" width="148.5" height="0.0"/>
+                    <attributedString key="attributedText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p89-r2-azV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="743-pV-XMa"/>
+                <constraint firstItem="p89-r2-azV" firstAttribute="leading" secondItem="XiH-Zw-2I7" secondAttribute="trailing" constant="4" id="7Xx-Qr-G5a"/>
+                <constraint firstItem="p89-r2-azV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8pW-Y8-tqu"/>
+                <constraint firstItem="XiH-Zw-2I7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="N8n-3Y-S7h"/>
+                <constraint firstItem="XiH-Zw-2I7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UWH-yM-Ldq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardValueTextField" destination="p89-r2-azV" id="PIz-DR-Bf3"/>
+                <outlet property="textFieldLabel" destination="XiH-Zw-2I7" id="ZC6-Mg-ARG"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="31.473214285714285"/>
+        </view>
+    </objects>
+</document>

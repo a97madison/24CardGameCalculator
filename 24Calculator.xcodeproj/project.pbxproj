@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9611233A25C81E180016C7F9 /* TargetTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9611233825C81E180016C7F9 /* TargetTextFieldView.xib */; };
+		9611233B25C81E180016C7F9 /* TargetTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611233925C81E180016C7F9 /* TargetTextFieldView.swift */; };
+		9611236925C8505F0016C7F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611236825C8505F0016C7F9 /* Constants.swift */; };
+		9611239325CA60DC0016C7F9 /* ReusableTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9611239125CA60DC0016C7F9 /* ReusableTextFieldView.xib */; };
+		9611239425CA60DC0016C7F9 /* ReusableTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */; };
+		96A1E4C225C7EBCB006F9DD6 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4BD25C7EBCB006F9DD6 /* Nunito-Regular.ttf */; };
+		96A1E4C325C7EBCB006F9DD6 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4BE25C7EBCB006F9DD6 /* Nunito-Bold.ttf */; };
+		96A1E4C425C7EBCB006F9DD6 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4BF25C7EBCB006F9DD6 /* Nunito-Black.ttf */; };
+		96A1E4C525C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4C025C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf */; };
+		96A1E4C625C7EBCB006F9DD6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4C125C7EBCB006F9DD6 /* OFL.txt */; };
 		96CC22F125C0C26300179F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F025C0C26300179F85 /* AppDelegate.swift */; };
 		96CC22F325C0C26300179F85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F225C0C26300179F85 /* SceneDelegate.swift */; };
 		96CC22F525C0C26300179F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F425C0C26300179F85 /* ViewController.swift */; };
 		96CC22F825C0C26300179F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CC22F625C0C26300179F85 /* Main.storyboard */; };
 		96CC22FA25C0C26500179F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CC22F925C0C26500179F85 /* Assets.xcassets */; };
 		96CC22FD25C0C26500179F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CC22FB25C0C26500179F85 /* LaunchScreen.storyboard */; };
-		96CC230825C0C26500179F85 /* TwentySomethingCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC230725C0C26500179F85 /* TwentySomethingCalculatorTests.swift */; };
-		96CC231325C0C26600179F85 /* TwentySomethingCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC231225C0C26600179F85 /* TwentySomethingCalculatorUITests.swift */; };
+		96CC230825C0C26500179F85 /* _24CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC230725C0C26500179F85 /* _24CalculatorTests.swift */; };
+		96CC231325C0C26600179F85 /* _24CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC231225C0C26600179F85 /* _24CalculatorUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +33,29 @@
 			containerPortal = 96CC22E525C0C26300179F85 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96CC22EC25C0C26300179F85;
-			remoteInfo = TwentySomethingCalculator;
+			remoteInfo = 24Calculator;
 		};
 		96CC230F25C0C26500179F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96CC22E525C0C26300179F85 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96CC22EC25C0C26300179F85;
-			remoteInfo = TwentySomethingCalculator;
+			remoteInfo = 24Calculator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		96CC22ED25C0C26300179F85 /* TwentySomethingCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwentySomethingCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9611233825C81E180016C7F9 /* TargetTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TargetTextFieldView.xib; sourceTree = "<group>"; };
+		9611233925C81E180016C7F9 /* TargetTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTextFieldView.swift; sourceTree = "<group>"; };
+		9611236825C8505F0016C7F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9611239125CA60DC0016C7F9 /* ReusableTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableTextFieldView.xib; sourceTree = "<group>"; };
+		9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTextFieldView.swift; sourceTree = "<group>"; };
+		96A1E4BD25C7EBCB006F9DD6 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		96A1E4BE25C7EBCB006F9DD6 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		96A1E4BF25C7EBCB006F9DD6 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		96A1E4C025C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		96A1E4C125C7EBCB006F9DD6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		96CC22ED25C0C26300179F85 /* 24Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CC22F025C0C26300179F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CC22F225C0C26300179F85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96CC22F425C0C26300179F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,11 +63,11 @@
 		96CC22F925C0C26500179F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96CC22FC25C0C26500179F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96CC22FE25C0C26500179F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96CC230325C0C26500179F85 /* TwentySomethingCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentySomethingCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96CC230725C0C26500179F85 /* TwentySomethingCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentySomethingCalculatorTests.swift; sourceTree = "<group>"; };
+		96CC230325C0C26500179F85 /* _24CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _24CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CC230725C0C26500179F85 /* _24CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _24CalculatorTests.swift; sourceTree = "<group>"; };
 		96CC230925C0C26500179F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96CC230E25C0C26500179F85 /* TwentySomethingCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentySomethingCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96CC231225C0C26600179F85 /* TwentySomethingCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentySomethingCalculatorUITests.swift; sourceTree = "<group>"; };
+		96CC230E25C0C26500179F85 /* 24CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 24CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CC231225C0C26600179F85 /* _24CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _24CalculatorUITests.swift; sourceTree = "<group>"; };
 		96CC231425C0C26600179F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,12 +96,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9611233725C81E180016C7F9 /* TargetTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				9611233825C81E180016C7F9 /* TargetTextFieldView.xib */,
+				9611233925C81E180016C7F9 /* TargetTextFieldView.swift */,
+			);
+			path = TargetTextFieldView;
+			sourceTree = "<group>";
+		};
+		9611238625C91A3F0016C7F9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				9611239025CA60DC0016C7F9 /* ReusableTextFieldView */,
+				9611233725C81E180016C7F9 /* TargetTextFieldView */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		9611239025CA60DC0016C7F9 /* ReusableTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				9611239125CA60DC0016C7F9 /* ReusableTextFieldView.xib */,
+				9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */,
+			);
+			path = ReusableTextFieldView;
+			sourceTree = "<group>";
+		};
+		96A1E4BB25C7EBCB006F9DD6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96A1E4BC25C7EBCB006F9DD6 /* Nunito */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		96A1E4BC25C7EBCB006F9DD6 /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				96A1E4BD25C7EBCB006F9DD6 /* Nunito-Regular.ttf */,
+				96A1E4BE25C7EBCB006F9DD6 /* Nunito-Bold.ttf */,
+				96A1E4BF25C7EBCB006F9DD6 /* Nunito-Black.ttf */,
+				96A1E4C025C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf */,
+				96A1E4C125C7EBCB006F9DD6 /* OFL.txt */,
+			);
+			path = Nunito;
+			sourceTree = "<group>";
+		};
 		96CC22E425C0C26300179F85 = {
 			isa = PBXGroup;
 			children = (
-				96CC22EF25C0C26300179F85 /* TwentySomethingCalculator */,
-				96CC230625C0C26500179F85 /* TwentySomethingCalculatorTests */,
-				96CC231125C0C26600179F85 /* TwentySomethingCalculatorUITests */,
+				96CC22EF25C0C26300179F85 /* 24Calculator */,
+				96CC230625C0C26500179F85 /* 24CalculatorTests */,
+				96CC231125C0C26600179F85 /* 24CalculatorUITests */,
 				96CC22EE25C0C26300179F85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +156,54 @@
 		96CC22EE25C0C26300179F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96CC22ED25C0C26300179F85 /* TwentySomethingCalculator.app */,
-				96CC230325C0C26500179F85 /* TwentySomethingCalculatorTests.xctest */,
-				96CC230E25C0C26500179F85 /* TwentySomethingCalculatorUITests.xctest */,
+				96CC22ED25C0C26300179F85 /* 24Calculator.app */,
+				96CC230325C0C26500179F85 /* _24CalculatorTests.xctest */,
+				96CC230E25C0C26500179F85 /* 24CalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96CC22EF25C0C26300179F85 /* TwentySomethingCalculator */ = {
+		96CC22EF25C0C26300179F85 /* 24Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				96CC22F925C0C26500179F85 /* Assets.xcassets */,
+				96CC22F625C0C26300179F85 /* Main.storyboard */,
+				96CC22FB25C0C26500179F85 /* LaunchScreen.storyboard */,
 				96CC22F025C0C26300179F85 /* AppDelegate.swift */,
+				9611236825C8505F0016C7F9 /* Constants.swift */,
 				96CC22F225C0C26300179F85 /* SceneDelegate.swift */,
 				96CC22F425C0C26300179F85 /* ViewController.swift */,
-				96CC22F625C0C26300179F85 /* Main.storyboard */,
-				96CC22F925C0C26500179F85 /* Assets.xcassets */,
-				96CC22FB25C0C26500179F85 /* LaunchScreen.storyboard */,
+				96A1E4BB25C7EBCB006F9DD6 /* Fonts */,
+				9611238625C91A3F0016C7F9 /* Subviews */,
 				96CC22FE25C0C26500179F85 /* Info.plist */,
 			);
-			path = TwentySomethingCalculator;
+			path = 24Calculator;
 			sourceTree = "<group>";
 		};
-		96CC230625C0C26500179F85 /* TwentySomethingCalculatorTests */ = {
+		96CC230625C0C26500179F85 /* 24CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				96CC230725C0C26500179F85 /* TwentySomethingCalculatorTests.swift */,
+				96CC230725C0C26500179F85 /* _24CalculatorTests.swift */,
 				96CC230925C0C26500179F85 /* Info.plist */,
 			);
-			path = TwentySomethingCalculatorTests;
+			path = 24CalculatorTests;
 			sourceTree = "<group>";
 		};
-		96CC231125C0C26600179F85 /* TwentySomethingCalculatorUITests */ = {
+		96CC231125C0C26600179F85 /* 24CalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				96CC231225C0C26600179F85 /* TwentySomethingCalculatorUITests.swift */,
+				96CC231225C0C26600179F85 /* _24CalculatorUITests.swift */,
 				96CC231425C0C26600179F85 /* Info.plist */,
 			);
-			path = TwentySomethingCalculatorUITests;
+			path = 24CalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96CC22EC25C0C26300179F85 /* TwentySomethingCalculator */ = {
+		96CC22EC25C0C26300179F85 /* 24Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96CC231725C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculator" */;
+			buildConfigurationList = 96CC231725C0C26600179F85 /* Build configuration list for PBXNativeTarget "24Calculator" */;
 			buildPhases = (
 				96CC22E925C0C26300179F85 /* Sources */,
 				96CC22EA25C0C26300179F85 /* Frameworks */,
@@ -143,14 +213,14 @@
 			);
 			dependencies = (
 			);
-			name = TwentySomethingCalculator;
-			productName = TwentySomethingCalculator;
-			productReference = 96CC22ED25C0C26300179F85 /* TwentySomethingCalculator.app */;
+			name = 24Calculator;
+			productName = 24Calculator;
+			productReference = 96CC22ED25C0C26300179F85 /* 24Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		96CC230225C0C26500179F85 /* TwentySomethingCalculatorTests */ = {
+		96CC230225C0C26500179F85 /* _24CalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96CC231A25C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculatorTests" */;
+			buildConfigurationList = 96CC231A25C0C26600179F85 /* Build configuration list for PBXNativeTarget "_24CalculatorTests" */;
 			buildPhases = (
 				96CC22FF25C0C26500179F85 /* Sources */,
 				96CC230025C0C26500179F85 /* Frameworks */,
@@ -161,14 +231,14 @@
 			dependencies = (
 				96CC230525C0C26500179F85 /* PBXTargetDependency */,
 			);
-			name = TwentySomethingCalculatorTests;
-			productName = TwentySomethingCalculatorTests;
-			productReference = 96CC230325C0C26500179F85 /* TwentySomethingCalculatorTests.xctest */;
+			name = _24CalculatorTests;
+			productName = 24CalculatorTests;
+			productReference = 96CC230325C0C26500179F85 /* _24CalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		96CC230D25C0C26500179F85 /* TwentySomethingCalculatorUITests */ = {
+		96CC230D25C0C26500179F85 /* 24CalculatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96CC231D25C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculatorUITests" */;
+			buildConfigurationList = 96CC231D25C0C26600179F85 /* Build configuration list for PBXNativeTarget "24CalculatorUITests" */;
 			buildPhases = (
 				96CC230A25C0C26500179F85 /* Sources */,
 				96CC230B25C0C26500179F85 /* Frameworks */,
@@ -179,9 +249,9 @@
 			dependencies = (
 				96CC231025C0C26500179F85 /* PBXTargetDependency */,
 			);
-			name = TwentySomethingCalculatorUITests;
-			productName = TwentySomethingCalculatorUITests;
-			productReference = 96CC230E25C0C26500179F85 /* TwentySomethingCalculatorUITests.xctest */;
+			name = 24CalculatorUITests;
+			productName = 24CalculatorUITests;
+			productReference = 96CC230E25C0C26500179F85 /* 24CalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96CC22E825C0C26300179F85 /* Build configuration list for PBXProject "TwentySomethingCalculator" */;
+			buildConfigurationList = 96CC22E825C0C26300179F85 /* Build configuration list for PBXProject "24Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +289,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96CC22EC25C0C26300179F85 /* TwentySomethingCalculator */,
-				96CC230225C0C26500179F85 /* TwentySomethingCalculatorTests */,
-				96CC230D25C0C26500179F85 /* TwentySomethingCalculatorUITests */,
+				96CC22EC25C0C26300179F85 /* 24Calculator */,
+				96CC230225C0C26500179F85 /* _24CalculatorTests */,
+				96CC230D25C0C26500179F85 /* 24CalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,9 +301,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A1E4C625C7EBCB006F9DD6 /* OFL.txt in Resources */,
+				96A1E4C525C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf in Resources */,
+				96A1E4C225C7EBCB006F9DD6 /* Nunito-Regular.ttf in Resources */,
+				9611239325CA60DC0016C7F9 /* ReusableTextFieldView.xib in Resources */,
 				96CC22FD25C0C26500179F85 /* LaunchScreen.storyboard in Resources */,
+				96A1E4C325C7EBCB006F9DD6 /* Nunito-Bold.ttf in Resources */,
+				9611233A25C81E180016C7F9 /* TargetTextFieldView.xib in Resources */,
 				96CC22FA25C0C26500179F85 /* Assets.xcassets in Resources */,
 				96CC22F825C0C26300179F85 /* Main.storyboard in Resources */,
+				96A1E4C425C7EBCB006F9DD6 /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +338,9 @@
 				96CC22F525C0C26300179F85 /* ViewController.swift in Sources */,
 				96CC22F125C0C26300179F85 /* AppDelegate.swift in Sources */,
 				96CC22F325C0C26300179F85 /* SceneDelegate.swift in Sources */,
+				9611233B25C81E180016C7F9 /* TargetTextFieldView.swift in Sources */,
+				9611236925C8505F0016C7F9 /* Constants.swift in Sources */,
+				9611239425CA60DC0016C7F9 /* ReusableTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CC230825C0C26500179F85 /* TwentySomethingCalculatorTests.swift in Sources */,
+				96CC230825C0C26500179F85 /* _24CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CC231325C0C26600179F85 /* TwentySomethingCalculatorUITests.swift in Sources */,
+				96CC231325C0C26600179F85 /* _24CalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +365,12 @@
 /* Begin PBXTargetDependency section */
 		96CC230525C0C26500179F85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96CC22EC25C0C26300179F85 /* TwentySomethingCalculator */;
+			target = 96CC22EC25C0C26300179F85 /* 24Calculator */;
 			targetProxy = 96CC230425C0C26500179F85 /* PBXContainerItemProxy */;
 		};
 		96CC231025C0C26500179F85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96CC22EC25C0C26300179F85 /* TwentySomethingCalculator */;
+			target = 96CC22EC25C0C26300179F85 /* 24Calculator */;
 			targetProxy = 96CC230F25C0C26500179F85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -366,10 +446,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = "$(PRODUCT_MODULE_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = _24Calculator;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,9 +503,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = "$(PRODUCT_MODULE_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = _24Calculator;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -438,12 +522,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculator/Info.plist;
+				INFOPLIST_FILE = 24Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,12 +541,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculator/Info.plist;
+				INFOPLIST_FILE = 24Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,18 +560,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculatorTests/Info.plist;
+				INFOPLIST_FILE = 24CalculatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwentySomethingCalculator.app/TwentySomethingCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24Calculator.app/24Calculator";
 			};
 			name = Debug;
 		};
@@ -498,18 +582,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculatorTests/Info.plist;
+				INFOPLIST_FILE = 24CalculatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwentySomethingCalculator.app/TwentySomethingCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24Calculator.app/24Calculator";
 			};
 			name = Release;
 		};
@@ -519,17 +603,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculatorUITests/Info.plist;
+				INFOPLIST_FILE = 24CalculatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TwentySomethingCalculator;
+				TEST_TARGET_NAME = 24Calculator;
 			};
 			name = Debug;
 		};
@@ -539,24 +623,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69H7TRL85F;
-				INFOPLIST_FILE = TwentySomethingCalculatorUITests/Info.plist;
+				INFOPLIST_FILE = 24CalculatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.TwentySomethingCalculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Anthony-Madison.24CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TwentySomethingCalculator;
+				TEST_TARGET_NAME = 24Calculator;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96CC22E825C0C26300179F85 /* Build configuration list for PBXProject "TwentySomethingCalculator" */ = {
+		96CC22E825C0C26300179F85 /* Build configuration list for PBXProject "24Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CC231525C0C26600179F85 /* Debug */,
@@ -565,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96CC231725C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculator" */ = {
+		96CC231725C0C26600179F85 /* Build configuration list for PBXNativeTarget "24Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CC231825C0C26600179F85 /* Debug */,
@@ -574,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96CC231A25C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculatorTests" */ = {
+		96CC231A25C0C26600179F85 /* Build configuration list for PBXNativeTarget "_24CalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CC231B25C0C26600179F85 /* Debug */,
@@ -583,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96CC231D25C0C26600179F85 /* Build configuration list for PBXNativeTarget "TwentySomethingCalculatorUITests" */ = {
+		96CC231D25C0C26600179F85 /* Build configuration list for PBXNativeTarget "24CalculatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CC231E25C0C26600179F85 /* Debug */,
