@@ -7,15 +7,57 @@
 
 import UIKit
 
-class ReusableTextFieldView: UIView {
-    // one UILabel, one UITextField
+class ReusableTextFieldView: NibLoadingView {
+    // two UILabels, one UITextField
     @IBOutlet weak var textFieldLabel: UILabel!
+    @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var cardValueTextField: UITextField!
+    
+    var fontSize: CGFloat = 32
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupLabelStyle(label: textFieldLabel)
+        self.setupTextFieldStyle(textField: cardValueTextField)
+    }
 
-    func setLabelUI(index: Int) {
-        let number = index + 1
-        let text = "Card #" + String(number) + " Value"
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.setupLabelStyle(label: textFieldLabel)
+        self.setupTextFieldStyle(textField: cardValueTextField)
+    }
+    
+    func setLabelText(text: String) {
+        let font = UIFont(name: "Nunito-Regular.ttf", size: fontSize)
+        textFieldLabel.font = font
+        textFieldLabel.textColor = .white
+        textFieldLabel.adjustsFontSizeToFitWidth = true
         textFieldLabel.text = text
+    }
+    
+    func setLabelUI(index: Int) {
+        var numLabel: String = ""
+        switch index {
+        case 0:
+            numLabel = "①"
+            break
+        case 1:
+            numLabel = "②"
+            break
+        case 2:
+            numLabel = "③"
+            break
+        case 3:
+            numLabel = "④"
+            break
+        default:
+            break
+        }
+        indexLabel.text = numLabel
+     
+        let number = index + 1
+        let label = "Card #" + String(number) + " Value: "
+        setLabelText(text: label)
     }
     
     func getValue() -> Int? {

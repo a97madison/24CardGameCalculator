@@ -7,12 +7,24 @@
 
 import UIKit
 
-class TargetTextFieldView: UIView {
+class TargetTextFieldView: NibLoadingView {
     // three UILabels, one UITextField
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var twentyFourLabel: UILabel!
     @IBOutlet weak var equationLabel: UILabel!
     @IBOutlet weak var targetTextField: UITextField!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupLabelStyle(label: targetLabel)
+        setupLabelStyle(label: equationLabel)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupLabelStyle(label: targetLabel)
+        setupLabelStyle(label: equationLabel)
+    }
     
     func updateUI() {
         twentyFourLabel.isHidden = !twentyFourLabel.isHidden
@@ -25,7 +37,7 @@ class TargetTextFieldView: UIView {
             return 24
         }
 
-        guard let input: String = targetTextField.text && num = Int(input) else {
+        guard let num = Int(targetTextField.text ?? "") else {
             return nil
         }
 

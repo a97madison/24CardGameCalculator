@@ -7,50 +7,89 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusableTextFieldView" customModule="_24Calculator" customModuleProvider="target">
+            <connections>
+                <outlet property="cardValueTextField" destination="p89-r2-azV" id="V9S-Gz-ME0"/>
+                <outlet property="indexLabel" destination="Nuv-fz-14S" id="YAM-0P-yBs"/>
+                <outlet property="textFieldLabel" destination="XiH-Zw-2I7" id="HBk-lb-sTW"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReusableTextFieldView" customModule="_24Calculator" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p89-r2-azV">
-                    <rect key="frame" x="172.5" y="6" width="69" height="48"/>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-Ni-gLq">
+                    <rect key="frame" x="166" y="6" width="82" height="48"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuv-fz-14S">
+                            <rect key="frame" x="71" y="2" width="9" height="13"/>
+                            <attributedString key="attributedText">
+                                <fragment content="④">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="9" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="KL6-Cn-t0N"/>
+                        <constraint firstAttribute="height" constant="48" id="VdJ-ct-c29"/>
+                        <constraint firstItem="Nuv-fz-14S" firstAttribute="top" secondItem="8RK-Ni-gLq" secondAttribute="top" constant="2" id="hbg-Da-OrP"/>
+                        <constraint firstAttribute="trailing" secondItem="Nuv-fz-14S" secondAttribute="trailing" constant="2" id="pPq-Vq-MpA"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="1-13, J, Q, K" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="p89-r2-azV">
+                    <rect key="frame" x="166" y="0.0" width="82" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="69" id="6Ku-m6-GPW"/>
-                        <constraint firstAttribute="height" constant="48" id="zOV-ke-RXg"/>
+                        <constraint firstAttribute="width" constant="82" id="6Ku-m6-GPW"/>
                     </constraints>
                     <attributedString key="attributedText">
-                        <fragment content="24">
+                        <fragment content=" ">
                             <attributes>
-                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <font key="NSFont" size="32" name="Nunito-Black"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="32" name="Nunito-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-Zw-2I7">
-                    <rect key="frame" x="20" y="30" width="148.5" height="0.0"/>
-                    <attributedString key="attributedText"/>
-                    <nil key="highlightedColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-Zw-2I7">
+                    <rect key="frame" x="20" y="11.5" width="142" height="37.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="32" name="Nunito-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="p89-r2-azV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="743-pV-XMa"/>
-                <constraint firstItem="p89-r2-azV" firstAttribute="leading" secondItem="XiH-Zw-2I7" secondAttribute="trailing" constant="4" id="7Xx-Qr-G5a"/>
-                <constraint firstItem="p89-r2-azV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8pW-Y8-tqu"/>
+                <constraint firstItem="p89-r2-azV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1hN-iR-t0y"/>
+                <constraint firstItem="p89-r2-azV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K3A-eM-NMg"/>
                 <constraint firstItem="XiH-Zw-2I7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="N8n-3Y-S7h"/>
+                <constraint firstItem="8RK-Ni-gLq" firstAttribute="leading" secondItem="XiH-Zw-2I7" secondAttribute="trailing" constant="4" id="U1m-PR-pzh"/>
                 <constraint firstItem="XiH-Zw-2I7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UWH-yM-Ldq"/>
+                <constraint firstItem="8RK-Ni-gLq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zyl-sg-mRO"/>
+                <constraint firstItem="8RK-Ni-gLq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="paI-VH-vGc"/>
+                <constraint firstItem="p89-r2-azV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rqF-Jq-eR6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p89-r2-azV" secondAttribute="bottom" id="zTi-4u-3bG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="cardValueTextField" destination="p89-r2-azV" id="PIz-DR-Bf3"/>
-                <outlet property="textFieldLabel" destination="XiH-Zw-2I7" id="ZC6-Mg-ARG"/>
-            </connections>
             <point key="canvasLocation" x="140.57971014492756" y="31.473214285714285"/>
         </view>
     </objects>
