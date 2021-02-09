@@ -19,10 +19,10 @@ class ReusableButtonView: NibLoadingView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
+//        for family in UIFont.familyNames.sorted() {
+//            let names = UIFont.fontNames(forFamilyName: family)
+//            print("Family: \(family) Font names: \(names)")
+//        }
         
         super.init(coder: aDecoder)
         self.setupButtonStyle(button: button)
@@ -40,10 +40,24 @@ class ReusableButtonView: NibLoadingView {
         self.setNeedsDisplay()
     }
     
-    func setButtonBehaviour(handler: @escaping () -> ()) {
-        self.handler = handler
+    func setButtonBehaviour(handler: @escaping () -> (),
+                            showToolTipHandler: @escaping () -> ()) {
+        func buttonClicked() {
+            if (self.button.alpha == 1) {
+                // button is enabled, call handler
+                handler()
+            } else {
+                // button is disabled, call show tooltip handler
+                showToolTipHandler()
+            }
+        }
+        self.handler = buttonClicked
     }
     
+    func setIsEnabled(isEnabled: Bool) {
+//        self.button.isEnabled = isEnabled
+        self.button.alpha = isEnabled ? 1.0 : 0.5
+    }
     
     @IBAction func buttonClicked(_ sender: Any) {
         self.handler?()

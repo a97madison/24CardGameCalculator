@@ -20,6 +20,8 @@
 		96A1E4C425C7EBCB006F9DD6 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4BF25C7EBCB006F9DD6 /* Nunito-Black.ttf */; };
 		96A1E4C525C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4C025C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf */; };
 		96A1E4C625C7EBCB006F9DD6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96A1E4C125C7EBCB006F9DD6 /* OFL.txt */; };
+		96BFFD1625D30A5000093E6F /* TooltipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BFFD1325D30A5000093E6F /* TooltipView.xib */; };
+		96BFFD1725D30A5000093E6F /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BFFD1425D30A5000093E6F /* TooltipView.swift */; };
 		96CC22F125C0C26300179F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F025C0C26300179F85 /* AppDelegate.swift */; };
 		96CC22F325C0C26300179F85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F225C0C26300179F85 /* SceneDelegate.swift */; };
 		96CC22F525C0C26300179F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC22F425C0C26300179F85 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		96A1E4BF25C7EBCB006F9DD6 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 		96A1E4C025C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 		96A1E4C125C7EBCB006F9DD6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		96BFFD1325D30A5000093E6F /* TooltipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TooltipView.xib; sourceTree = "<group>"; };
+		96BFFD1425D30A5000093E6F /* TooltipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TooltipView.swift; sourceTree = "<group>"; };
 		96CC22ED25C0C26300179F85 /* 24Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CC22F025C0C26300179F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CC22F225C0C26300179F85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		9611238625C91A3F0016C7F9 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				96BFFD1125D30A5000093E6F /* TooltipView */,
 				967BF51F25CF281300F3B5A3 /* ReusableButtonView */,
 				9611239025CA60DC0016C7F9 /* ReusableTextFieldView */,
 				9611233725C81E180016C7F9 /* TargetTextFieldView */,
@@ -187,6 +192,15 @@
 				96A1E4C125C7EBCB006F9DD6 /* OFL.txt */,
 			);
 			path = Nunito;
+			sourceTree = "<group>";
+		};
+		96BFFD1125D30A5000093E6F /* TooltipView */ = {
+			isa = PBXGroup;
+			children = (
+				96BFFD1325D30A5000093E6F /* TooltipView.xib */,
+				96BFFD1425D30A5000093E6F /* TooltipView.swift */,
+			);
+			path = TooltipView;
 			sourceTree = "<group>";
 		};
 		96CC22E425C0C26300179F85 = {
@@ -354,6 +368,7 @@
 			files = (
 				96A1E4C625C7EBCB006F9DD6 /* OFL.txt in Resources */,
 				96A1E4C525C7EBCB006F9DD6 /* Nunito-BlackItalic.ttf in Resources */,
+				96BFFD1625D30A5000093E6F /* TooltipView.xib in Resources */,
 				96A1E4C225C7EBCB006F9DD6 /* Nunito-Regular.ttf in Resources */,
 				9611239325CA60DC0016C7F9 /* ReusableTextFieldView.xib in Resources */,
 				96CC22FD25C0C26500179F85 /* LaunchScreen.storyboard in Resources */,
@@ -439,6 +454,7 @@
 				96CC22F325C0C26300179F85 /* SceneDelegate.swift in Sources */,
 				9611233B25C81E180016C7F9 /* TargetTextFieldView.swift in Sources */,
 				967BF53325CF382600F3B5A3 /* NibLoadingView.swift in Sources */,
+				96BFFD1725D30A5000093E6F /* TooltipView.swift in Sources */,
 				9611236925C8505F0016C7F9 /* Constants.swift in Sources */,
 				967BF52125CF283100F3B5A3 /* ReusableButtonView.swift in Sources */,
 				9611239425CA60DC0016C7F9 /* ReusableTextFieldView.swift in Sources */,

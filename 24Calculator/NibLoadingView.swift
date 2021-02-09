@@ -61,4 +61,8 @@ class NibLoadingView: UIView {
         button.layer.borderWidth = 1.0
         button.layer.borderColor = UIColor.white.cgColor
     }
+    
+    func clearTextField(textField: UITextField) {
+        textField.text = ""
+    }
 }

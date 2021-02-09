@@ -115,6 +115,14 @@
                                 <rect key="frame" x="0.0" y="420" width="428" height="472"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJF-jb-sIH" customClass="TooltipView" customModule="_24Calculator" customModuleProvider="target">
+                                <rect key="frame" x="74" y="412" width="280" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="NSq-cs-MXe"/>
+                                    <constraint firstAttribute="width" constant="280" id="hSv-N5-38N"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.42351566466625762" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,6 +132,8 @@
                             <constraint firstItem="RwC-eS-e4h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FTt-4L-2SE"/>
                             <constraint firstItem="RwC-eS-e4h" firstAttribute="top" secondItem="MDL-wp-3Am" secondAttribute="bottom" constant="8" symbolic="YES" id="FpS-yv-Xiv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xu-3f-Ehc" secondAttribute="trailing" id="H4B-DL-Pke"/>
+                            <constraint firstItem="tJF-jb-sIH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Saj-oD-7Rt"/>
+                            <constraint firstItem="tJF-jb-sIH" firstAttribute="top" secondItem="RwC-eS-e4h" secondAttribute="bottom" id="Stb-x6-D5f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1xu-3f-Ehc" secondAttribute="bottom" id="WVA-BR-j59"/>
                             <constraint firstItem="MDL-wp-3Am" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YzJ-RN-oEw"/>
                             <constraint firstItem="RwC-eS-e4h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dm6-iu-GE9"/>
@@ -134,7 +144,7 @@
                     <connections>
                         <outlet property="calculateSolutionsButton" destination="taS-s6-VH6" id="WMo-IE-7tl"/>
                         <outlet property="card1TextField" destination="wc8-BG-pPv" id="KyC-k0-Zgc"/>
-                        <outlet property="card2TextxField" destination="FKV-uO-ijd" id="4sK-85-mDM"/>
+                        <outlet property="card2TextField" destination="FKV-uO-ijd" id="6nd-xb-wmd"/>
                         <outlet property="card3TextField" destination="1n8-5s-9ef" id="UOO-at-HEM"/>
                         <outlet property="card4TextField" destination="C96-GF-mWQ" id="lpa-oP-gdU"/>
                         <outlet property="headerSectionView" destination="MDL-wp-3Am" id="qdp-Px-62Y"/>
@@ -142,6 +152,7 @@
                         <outlet property="resetButton" destination="j7i-Vv-YgQ" id="t9R-hd-RdQ"/>
                         <outlet property="solutionsSectionView" destination="1xu-3f-Ehc" id="0jt-IO-g4K"/>
                         <outlet property="targetTextField" destination="npZ-If-jdp" id="elC-T4-P4c"/>
+                        <outlet property="tooltipView" destination="tJF-jb-sIH" id="88v-fj-ezx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

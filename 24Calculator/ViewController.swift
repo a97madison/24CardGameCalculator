@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetTextField: TargetTextFieldView!
     // four ReusableTextFieldView
     @IBOutlet weak var card1TextField: ReusableTextFieldView!
-    @IBOutlet weak var card2TextxField: ReusableTextFieldView!
+    @IBOutlet weak var card2TextField: ReusableTextFieldView!
     @IBOutlet weak var card3TextField: ReusableTextFieldView!
     @IBOutlet weak var card4TextField: ReusableTextFieldView!
     // two ReusableButtonViews
@@ -42,6 +42,9 @@ class ViewController: UIViewController {
     // one label
     // one ReusableButtonView
     // one tableView
+    
+    // tooltip view:
+    @IBOutlet weak var tooltipView: TooltipView!
     
     var calculatorType: CalculatorType = CalculatorType.TwentyFour
     var targetText = "18"
@@ -68,36 +71,75 @@ class ViewController: UIViewController {
                 (card4Num != nil))
     }
 
-    func setupLabelText() {
+    func setupUIText() {
         // inputs section label text
         card1TextField.setLabelUI(index: 0)
-        card2TextxField.setLabelUI(index: 1)
+        card2TextField.setLabelUI(index: 1)
         card3TextField.setLabelUI(index: 2)
         card4TextField.setLabelUI(index: 3)
+        card1TextField.setEnableDisableButtonsHandler(handler: self.enableDisableButtons)
+        card2TextField.setEnableDisableButtonsHandler(handler: self.enableDisableButtons)
+        card3TextField.setEnableDisableButtonsHandler(handler: self.enableDisableButtons)
+        card4TextField.setEnableDisableButtonsHandler(handler: self.enableDisableButtons)
+        
         resetButton.setButtonUI(text: "RESET", fontSize: 12)
-        calculateSolutionsButton.setButtonUI(text: "CALCULATE SOLUTIONS", fontSize: 20) // maybe set font size to 32.
+        calculateSolutionsButton.setButtonUI(text: "CALCULATE SOLUTIONS", fontSize: 20)
         
         // solutions section label text
     }
     
+    func resetButtonHandler() {
+        targetTextField.resetTextField()
+         
+        card1TextField.clearTextField()
+        card2TextField.clearTextField()
+        card3TextField.clearTextField()
+        card4TextField.clearTextField()
+        
+        self.enableDisableButtons()
+    }
+    
+    func calculateSolutionsHandler() {
+        
+    }
+    
+    func showTooltipHandler() {
+        self.tooltipView.isHidden = false
+        self.calculateSolutionsButton.button.isEnabled = false
+        UIView.animate(withDuration: 1, delay: 3, options: UIView.AnimationOptions.transitionFlipFromTop, animations: {
+            self.tooltipView.alpha = 0
+        }, completion: { finished in
+            self.tooltipView.isHidden = true
+            self.calculateSolutionsButton.button.isEnabled = true
+            self.tooltipView.alpha = 1
+        })
+    }
+    
+    func setupButtonHandlers() {
+        resetButton.setButtonBehaviour(handler: resetButtonHandler, showToolTipHandler: showTooltipHandler)
+        calculateSolutionsButton.setButtonBehaviour(handler: calculateSolutionsHandler, showToolTipHandler: showTooltipHandler)
+    }
+    
+    func enableDisableButtons() {
+        let isEnabled = (targetTextField.isValidTargetTextField() &&
+                            card1TextField.isValidCardValue() &&
+                            card2TextField.isValidCardValue() &&
+                            card3TextField.isValidCardValue() &&
+                            card4TextField.isValidCardValue())
+        calculateSolutionsButton.setIsEnabled(isEnabled: isEnabled)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // setup target text field default text anything else settings related
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        setupLabelText()
-
-        // set local number variables
-        setNumVariables()
-
-        // should Calculate Solutions be enabled
-        let shouldEnableCalculateButton: Bool = shouldEnableCalculateButtonHelper()
-        // calculateButton.isEnabled = shouldEnableCalculateButton
+                
+        setupUIText()
+        setupButtonHandlers()
+        enableDisableButtons()
         
         // input section views setup
         // based on calculator type, toggle targetTextFieldView UI if necessary

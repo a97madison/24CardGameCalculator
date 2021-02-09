@@ -13,6 +13,8 @@ class ReusableTextFieldView: NibLoadingView {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var cardValueTextField: UITextField!
     
+    var enableDisableButtonsHandler: (() -> ())?
+    
     var fontSize: CGFloat = 32
     
     override init(frame: CGRect) {
@@ -25,6 +27,10 @@ class ReusableTextFieldView: NibLoadingView {
         super.init(coder: aDecoder)
         self.setupLabelStyle(label: textFieldLabel)
         self.setupTextFieldStyle(textField: cardValueTextField)
+    }
+    
+    func setEnableDisableButtonsHandler(handler: @escaping () -> ()) {
+        enableDisableButtonsHandler = handler
     }
     
     func setLabelText(text: String) {
@@ -60,9 +66,17 @@ class ReusableTextFieldView: NibLoadingView {
         setLabelText(text: label)
     }
     
+    func clearTextField() {
+        self.clearTextField(textField: cardValueTextField)
+    }
+    
     func getValue() -> Int? {
-        guard let input: String = cardValueTextField.text else {
+        guard var input: String = cardValueTextField.text else {
             return nil
+        }
+        
+        while (input[0] == " ") {
+            input = input.substring(fromIndex: 1)
         }
         
         if (input == "J") {
@@ -75,5 +89,46 @@ class ReusableTextFieldView: NibLoadingView {
         
         let num = Int(input)
         return num
+    }
+    
+    func isValidCardValue() -> Bool {
+        guard let cardNum = getValue() else {
+            return false
+        }
+        return (cardNum >= 1 && cardNum <= 13)
+    }
+    
+    @IBAction func userChangedTextField(_ sender: Any) {
+        let fontColor: UIColor = isValidCardValue() ? .white : .systemGray
+        cardValueTextField.textColor = fontColor
+        self.enableDisableButtonsHandler?()
+    }
+}
+
+// String extension added/tested2
+extension String {
+
+    var length: Int {
+        return count
+    }
+
+    subscript (i: Int) -> String {
+        return self[i ..< i + 1]
+    }
+
+    func substring(fromIndex: Int) -> String {
+        return self[min(fromIndex, length) ..< length]
+    }
+
+    func substring(toIndex: Int) -> String {
+        return self[0 ..< max(0, toIndex)]
+    }
+
+    subscript (r: Range<Int>) -> String {
+        let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)),
+                                            upper: min(length, max(0, r.upperBound))))
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        let end = index(start, offsetBy: range.upperBound - range.lowerBound)
+        return String(self[start ..< end])
     }
 }

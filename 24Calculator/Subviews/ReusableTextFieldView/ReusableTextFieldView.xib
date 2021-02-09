@@ -61,6 +61,9 @@
                         </fragment>
                     </attributedString>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="userChangedTextField:" destination="-1" eventType="editingChanged" id="QCh-b3-hS8"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-Zw-2I7">
                     <rect key="frame" x="20" y="11.5" width="142" height="37.5"/>

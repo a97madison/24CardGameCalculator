@@ -32,17 +32,46 @@ class TargetTextFieldView: NibLoadingView {
         equationLabel.isHidden = !equationLabel.isHidden
     }
     
+    func resetTextField() {
+        targetTextField.text = " 18"
+    }
+    
+    func getTargetTextFieldValue() -> Int? {
+        guard var input = targetTextField.text else {
+            return nil
+        }
+
+        while (input[0] == " ") {
+            input = input.substring(fromIndex: 1)
+        }
+        
+        let num = Int(input)
+        return num
+    }
+    
     func getTargetValue(n4: Int) -> Int? {
         guard twentyFourLabel.isHidden else {
             return 24
         }
-
-        guard let num = Int(targetTextField.text ?? "") else {
+        
+        guard let num = getTargetTextFieldValue() else {
             return nil
         }
-
+        
         let targetValue: Int = num + n4
         return targetValue
+    }
+    
+    func isValidTargetTextField() -> Bool {
+        guard twentyFourLabel.isHidden else {
+            return true
+        }
+        
+        guard let targetValue = getTargetTextFieldValue() else {
+            return false
+        }
+        
+        return (targetValue >= 0 && targetValue <= 99)
     }
 
     /*
