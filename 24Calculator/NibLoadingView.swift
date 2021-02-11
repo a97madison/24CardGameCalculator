@@ -42,24 +42,49 @@ class NibLoadingView: UIView {
         return nibView
     }
     
+    func setupLabelColor(label: UILabel, isDisabled: Bool = false) {
+        let color = isDisabled ? Constants.global.disabledColor :  Constants.global.getTextColor()
+        label.textColor = color
+    }
+    
+    func setupTextFieldColor(textField: UITextField, isDisabled: Bool = false) {
+        let color = isDisabled ? Constants.global.disabledColor :  Constants.global.getTextColor()
+        textField.textColor = color
+    }
+    
     func setupLabelStyle(label: UILabel) {
         let font = UIFont(name: "Nunito-Regular", size: 32)
         label.font = font
         label.adjustsFontSizeToFitWidth = true
-        label.textColor = .white
+        setupLabelColor(label: label)
+    }
+    
+    func setupTextViewStyle(textView: UITextView) {
+        let color = Constants.global.getTextColor()
+        
+        textView.layer.cornerRadius = 5.0
+        textView.layer.borderWidth = 1.0
+        textView.layer.borderColor = color.cgColor
+        textView.textColor = color
     }
     
     func setupTextFieldStyle(textField: UITextField) {
+        let color = Constants.global.getTextColor()
+        
         textField.layer.cornerRadius = 5.0
         textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor.white.cgColor
+        textField.layer.borderColor = color.cgColor
+        textField.textColor = color
+        textField.tintColor = color
     }
     
     func setupButtonStyle(button: UIButton) {
-//        button.setTitleColor(.white, for: .normal)
+        let color = Constants.global.getTextColor()
+        
+        button.setTitleColor(color, for: .normal)
         button.layer.cornerRadius = 5.0
         button.layer.borderWidth = 1.0
-        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderColor = color.cgColor
     }
     
     func clearTextField(textField: UITextField) {

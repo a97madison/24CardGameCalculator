@@ -14,26 +14,38 @@ class TargetTextFieldView: NibLoadingView {
     @IBOutlet weak var equationLabel: UILabel!
     @IBOutlet weak var targetTextField: UITextField!
     
+    var enableDisableButtonsHandler: (() -> ())?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupLabelStyle(label: targetLabel)
-        setupLabelStyle(label: equationLabel)
+        initHelper()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        initHelper()
+    }
+    
+    func initHelper() {
         setupLabelStyle(label: targetLabel)
         setupLabelStyle(label: equationLabel)
+        setupTextFieldStyle(textField: targetTextField)
     }
     
     func updateUI() {
         twentyFourLabel.isHidden = !twentyFourLabel.isHidden
         targetTextField.isHidden = !targetTextField.isHidden
         equationLabel.isHidden = !equationLabel.isHidden
+        initHelper()
     }
     
     func resetTextField() {
-        targetTextField.text = " 18"
+        targetTextField.text = "18"
+        setupTextFieldStyle(textField: targetTextField)
+    }
+    
+    func setEnableDisableButtonsHandler(handler: @escaping () -> ()) {
+        enableDisableButtonsHandler = handler
     }
     
     func getTargetTextFieldValue() -> Int? {
@@ -74,6 +86,15 @@ class TargetTextFieldView: NibLoadingView {
         return (targetValue >= 0 && targetValue <= 99)
     }
 
+    @IBAction func userChangedTargetTextField(_ sender: Any) {
+        if (isValidTargetTextField()) {
+            setupTextFieldColor(textField: targetTextField)
+        } else {
+            setupTextFieldColor(textField: targetTextField, isDisabled: true)
+        }
+        
+        self.enableDisableButtonsHandler!()
+    }
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

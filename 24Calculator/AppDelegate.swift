@@ -7,13 +7,32 @@
 
 import UIKit
 
+enum CalculatorType {
+    case TwentyFour;
+    case TwentySomething;
+}
+
+enum ColorScheme {
+    case Green;
+    case Dark;
+    case Light;
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+                
+        //app launched, set UserDefaults if they are undefined
+        let defaults = UserDefaults.standard
+        if (defaults.string(forKey: "calculatorType") == nil) {
+            defaults.set("TwentyFour", forKey: "calculatorType")
+        }
+        if (defaults.string(forKey: "colorScheme") == nil) {
+            defaults.set("Green", forKey: "colorScheme")
+        }
+        
         return true
     }
 

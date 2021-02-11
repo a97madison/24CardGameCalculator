@@ -15,7 +15,7 @@ class ReusableButtonView: NibLoadingView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupButtonStyle(button: button)
+        initHelper()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -25,6 +25,10 @@ class ReusableButtonView: NibLoadingView {
 //        }
         
         super.init(coder: aDecoder)
+        initHelper()
+    }
+    
+    func initHelper() {
         self.setupButtonStyle(button: button)
     }
     

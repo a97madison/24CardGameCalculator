@@ -14,17 +14,18 @@ class TooltipView: NibLoadingView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupTextViewStyle()
+        initHelper()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.setupTextViewStyle()
+        initHelper()
     }
     
-    func setupTextViewStyle() {
-        popupTextView.layer.cornerRadius = 5.0
+    func initHelper() {
+        self.setupTextViewStyle(textView: popupTextView)
     }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

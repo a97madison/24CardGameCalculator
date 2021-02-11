@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9606649D25D4B056007AC8D1 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606649C25D4B056007AC8D1 /* TutorialViewController.swift */; };
+		960664A525D4B06D007AC8D1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960664A425D4B06D007AC8D1 /* InfoViewController.swift */; };
+		960664BE25D4CF4B007AC8D1 /* CalculateSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960664BD25D4CF4B007AC8D1 /* CalculateSolutions.swift */; };
+		960664CF25D5C72A007AC8D1 /* SingleSolutionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960664CD25D5C72A007AC8D1 /* SingleSolutionTableViewCell.swift */; };
+		960664D025D5C72A007AC8D1 /* SingleSolutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960664CE25D5C72A007AC8D1 /* SingleSolutionTableViewCell.xib */; };
 		9611233A25C81E180016C7F9 /* TargetTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9611233825C81E180016C7F9 /* TargetTextFieldView.xib */; };
 		9611233B25C81E180016C7F9 /* TargetTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611233925C81E180016C7F9 /* TargetTextFieldView.swift */; };
-		9611236925C8505F0016C7F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611236825C8505F0016C7F9 /* Constants.swift */; };
 		9611239325CA60DC0016C7F9 /* ReusableTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9611239125CA60DC0016C7F9 /* ReusableTextFieldView.xib */; };
 		9611239425CA60DC0016C7F9 /* ReusableTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */; };
+		9657FCD025D468650062CD02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9657FCCF25D468650062CD02 /* Constants.swift */; };
 		967BF52125CF283100F3B5A3 /* ReusableButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BF52025CF283100F3B5A3 /* ReusableButtonView.swift */; };
 		967BF52625CF2D8700F3B5A3 /* ReusableButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967BF52525CF2D8700F3B5A3 /* ReusableButtonView.xib */; };
 		967BF53325CF382600F3B5A3 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BF53225CF382600F3B5A3 /* NibLoadingView.swift */; };
@@ -53,11 +58,16 @@
 
 /* Begin PBXFileReference section */
 		4E703293F4135647A8CE6647 /* Pods_24Calculator_24CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_24Calculator_24CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9606649C25D4B056007AC8D1 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		960664A425D4B06D007AC8D1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		960664BD25D4CF4B007AC8D1 /* CalculateSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateSolutions.swift; sourceTree = "<group>"; };
+		960664CD25D5C72A007AC8D1 /* SingleSolutionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSolutionTableViewCell.swift; sourceTree = "<group>"; };
+		960664CE25D5C72A007AC8D1 /* SingleSolutionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSolutionTableViewCell.xib; sourceTree = "<group>"; };
 		9611233825C81E180016C7F9 /* TargetTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TargetTextFieldView.xib; sourceTree = "<group>"; };
 		9611233925C81E180016C7F9 /* TargetTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTextFieldView.swift; sourceTree = "<group>"; };
-		9611236825C8505F0016C7F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9611239125CA60DC0016C7F9 /* ReusableTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableTextFieldView.xib; sourceTree = "<group>"; };
 		9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTextFieldView.swift; sourceTree = "<group>"; };
+		9657FCCF25D468650062CD02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		967BF52025CF283100F3B5A3 /* ReusableButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableButtonView.swift; sourceTree = "<group>"; };
 		967BF52525CF2D8700F3B5A3 /* ReusableButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableButtonView.xib; sourceTree = "<group>"; };
 		967BF53225CF382600F3B5A3 /* NibLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -136,6 +146,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9606649B25D4B02F007AC8D1 /* PageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96CC22F625C0C26300179F85 /* Main.storyboard */,
+				96CC22F425C0C26300179F85 /* ViewController.swift */,
+				9606649C25D4B056007AC8D1 /* TutorialViewController.swift */,
+				960664A425D4B06D007AC8D1 /* InfoViewController.swift */,
+			);
+			path = PageViewControllers;
+			sourceTree = "<group>";
+		};
+		960664B425D4CECB007AC8D1 /* CalculateSolutions */ = {
+			isa = PBXGroup;
+			children = (
+				960664BD25D4CF4B007AC8D1 /* CalculateSolutions.swift */,
+			);
+			path = CalculateSolutions;
+			sourceTree = "<group>";
+		};
+		960664CC25D5C6F9007AC8D1 /* SingleSolutionCell */ = {
+			isa = PBXGroup;
+			children = (
+				960664CE25D5C72A007AC8D1 /* SingleSolutionTableViewCell.xib */,
+				960664CD25D5C72A007AC8D1 /* SingleSolutionTableViewCell.swift */,
+			);
+			path = SingleSolutionCell;
+			sourceTree = "<group>";
+		};
 		9611233725C81E180016C7F9 /* TargetTextFieldView */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +186,7 @@
 		9611238625C91A3F0016C7F9 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				960664CC25D5C6F9007AC8D1 /* SingleSolutionCell */,
 				96BFFD1125D30A5000093E6F /* TooltipView */,
 				967BF51F25CF281300F3B5A3 /* ReusableButtonView */,
 				9611239025CA60DC0016C7F9 /* ReusableTextFieldView */,
@@ -163,6 +202,14 @@
 				9611239225CA60DC0016C7F9 /* ReusableTextFieldView.swift */,
 			);
 			path = ReusableTextFieldView;
+			sourceTree = "<group>";
+		};
+		9657FCCE25D468540062CD02 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9657FCCF25D468650062CD02 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		967BF51F25CF281300F3B5A3 /* ReusableButtonView */ = {
@@ -229,13 +276,13 @@
 			isa = PBXGroup;
 			children = (
 				96CC22F925C0C26500179F85 /* Assets.xcassets */,
-				96CC22F625C0C26300179F85 /* Main.storyboard */,
 				96CC22FB25C0C26500179F85 /* LaunchScreen.storyboard */,
 				96CC22F025C0C26300179F85 /* AppDelegate.swift */,
-				9611236825C8505F0016C7F9 /* Constants.swift */,
 				96CC22F225C0C26300179F85 /* SceneDelegate.swift */,
-				96CC22F425C0C26300179F85 /* ViewController.swift */,
+				960664B425D4CECB007AC8D1 /* CalculateSolutions */,
+				9657FCCE25D468540062CD02 /* Constants */,
 				96A1E4BB25C7EBCB006F9DD6 /* Fonts */,
+				9606649B25D4B02F007AC8D1 /* PageViewControllers */,
 				9611238625C91A3F0016C7F9 /* Subviews */,
 				96CC22FE25C0C26500179F85 /* Info.plist */,
 				967BF53225CF382600F3B5A3 /* NibLoadingView.swift */,
@@ -376,6 +423,7 @@
 				9611233A25C81E180016C7F9 /* TargetTextFieldView.xib in Resources */,
 				96CC22FA25C0C26500179F85 /* Assets.xcassets in Resources */,
 				967BF52625CF2D8700F3B5A3 /* ReusableButtonView.xib in Resources */,
+				960664D025D5C72A007AC8D1 /* SingleSolutionTableViewCell.xib in Resources */,
 				96CC22F825C0C26300179F85 /* Main.storyboard in Resources */,
 				96A1E4C425C7EBCB006F9DD6 /* Nunito-Black.ttf in Resources */,
 			);
@@ -450,12 +498,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CC22F525C0C26300179F85 /* ViewController.swift in Sources */,
+				960664BE25D4CF4B007AC8D1 /* CalculateSolutions.swift in Sources */,
+				960664A525D4B06D007AC8D1 /* InfoViewController.swift in Sources */,
 				96CC22F125C0C26300179F85 /* AppDelegate.swift in Sources */,
+				9606649D25D4B056007AC8D1 /* TutorialViewController.swift in Sources */,
+				960664CF25D5C72A007AC8D1 /* SingleSolutionTableViewCell.swift in Sources */,
 				96CC22F325C0C26300179F85 /* SceneDelegate.swift in Sources */,
 				9611233B25C81E180016C7F9 /* TargetTextFieldView.swift in Sources */,
 				967BF53325CF382600F3B5A3 /* NibLoadingView.swift in Sources */,
+				9657FCD025D468650062CD02 /* Constants.swift in Sources */,
 				96BFFD1725D30A5000093E6F /* TooltipView.swift in Sources */,
-				9611236925C8505F0016C7F9 /* Constants.swift in Sources */,
 				967BF52125CF283100F3B5A3 /* ReusableButtonView.swift in Sources */,
 				9611239425CA60DC0016C7F9 /* ReusableTextFieldView.swift in Sources */,
 			);

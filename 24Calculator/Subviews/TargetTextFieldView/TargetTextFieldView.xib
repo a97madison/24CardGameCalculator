@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-eR-hep">
-                    <rect key="frame" x="20.000000000000007" y="11.333333333333332" width="119.66666666666669" height="37.333333333333343"/>
+                    <rect key="frame" x="20" y="11.333333333333332" width="113" height="37.333333333333343"/>
                     <attributedString key="attributedText">
                         <fragment content="Target = ">
                             <attributes>
@@ -33,23 +33,19 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-Fi-S7j">
-                    <rect key="frame" x="149.66666666666666" y="6" width="69" height="48"/>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="18" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="0-99" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-Fi-S7j">
+                    <rect key="frame" x="143" y="6" width="82" height="48"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="lbG-kr-8jL"/>
-                        <constraint firstAttribute="width" constant="69" id="r4f-Hb-duo"/>
+                        <constraint firstAttribute="width" constant="82" id="r4f-Hb-duo"/>
                     </constraints>
-                    <attributedString key="attributedText">
-                        <fragment content="18">
-                            <attributes>
-                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <font key="NSFont" size="32" name="Nunito-Regular"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="32"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="userChangedTargetTextField:" destination="-1" eventType="editingChanged" id="zxR-dM-tQ6"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miL-tC-icH">
                     <rect key="frame" x="166.33333333333334" y="11.333333333333332" width="35.666666666666657" height="37.333333333333343"/>
@@ -63,25 +59,12 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-Ev-Brf">
-                    <rect key="frame" x="212.66666666666666" y="11.333333333333332" width="58.333333333333343" height="37.666666666666671"/>
-                    <attributedString key="attributedText">
-                        <fragment content="+ ">
-                            <attributes>
-                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <font key="NSFont" size="32" name="Nunito-Regular"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                            </attributes>
-                        </fragment>
-                        <fragment content="④">
-                            <attributes>
-                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <font key="NSFont" metaFont="system" size="32"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ ④" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-Ev-Brf">
+                    <rect key="frame" x="227" y="11.333333333333332" width="57" height="37.333333333333343"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="tW1-67-Ae5"/>
@@ -89,7 +72,7 @@
             <constraints>
                 <constraint firstItem="FtI-Ev-Brf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AaD-Pu-LZ2"/>
                 <constraint firstItem="ZIv-Fi-S7j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IBo-b3-jr6"/>
-                <constraint firstItem="FtI-Ev-Brf" firstAttribute="leading" secondItem="ZIv-Fi-S7j" secondAttribute="trailing" constant="-6" id="Mc2-np-HFy"/>
+                <constraint firstItem="FtI-Ev-Brf" firstAttribute="leading" secondItem="ZIv-Fi-S7j" secondAttribute="trailing" constant="2" id="Mc2-np-HFy"/>
                 <constraint firstItem="iH1-eR-hep" firstAttribute="leading" secondItem="tW1-67-Ae5" secondAttribute="leading" constant="20" id="TjU-yy-RtT"/>
                 <constraint firstItem="miL-tC-icH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gVN-Y2-5wk"/>
                 <constraint firstItem="ZIv-Fi-S7j" firstAttribute="leading" secondItem="iH1-eR-hep" secondAttribute="trailing" constant="10" id="sZK-zc-dV1"/>

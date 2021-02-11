@@ -19,14 +19,20 @@ class ReusableTextFieldView: NibLoadingView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setupLabelStyle(label: textFieldLabel)
-        self.setupTextFieldStyle(textField: cardValueTextField)
+        initHelper()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.setupLabelStyle(label: textFieldLabel)
+        initHelper()
+    }
+    
+    func initHelper() {
+//        self.setupTextFieldStyle(textField: cardValueTextField)
         self.setupTextFieldStyle(textField: cardValueTextField)
+        self.clearTextField()
+        self.setupLabelStyle(label: textFieldLabel)
+        self.setupLabelColor(label: indexLabel)
     }
     
     func setEnableDisableButtonsHandler(handler: @escaping () -> ()) {
@@ -34,11 +40,8 @@ class ReusableTextFieldView: NibLoadingView {
     }
     
     func setLabelText(text: String) {
-        let font = UIFont(name: "Nunito-Regular.ttf", size: fontSize)
-        textFieldLabel.font = font
-        textFieldLabel.textColor = .white
-        textFieldLabel.adjustsFontSizeToFitWidth = true
         textFieldLabel.text = text
+        setupLabelStyle(label: textFieldLabel)
     }
     
     func setLabelUI(index: Int) {
@@ -79,7 +82,9 @@ class ReusableTextFieldView: NibLoadingView {
             input = input.substring(fromIndex: 1)
         }
         
-        if (input == "J") {
+        if (input == "A") {
+            return 1
+        } else if (input == "J") {
             return 11
         } else if (input == "Q") {
             return 12
@@ -99,9 +104,13 @@ class ReusableTextFieldView: NibLoadingView {
     }
     
     @IBAction func userChangedTextField(_ sender: Any) {
-        let fontColor: UIColor = isValidCardValue() ? .white : .systemGray
-        cardValueTextField.textColor = fontColor
-        self.enableDisableButtonsHandler?()
+        if (isValidCardValue()) {
+            setupTextFieldColor(textField: cardValueTextField)
+        } else {
+            setupTextFieldColor(textField: cardValueTextField, isDisabled: true)
+        }
+        
+        self.enableDisableButtonsHandler!()
     }
 }
 

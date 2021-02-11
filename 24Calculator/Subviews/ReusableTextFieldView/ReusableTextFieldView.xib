@@ -22,17 +22,10 @@
                 <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-Ni-gLq">
                     <rect key="frame" x="166" y="6" width="82" height="48"/>
                     <subviews>
-                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuv-fz-14S">
-                            <rect key="frame" x="71" y="2" width="9" height="13"/>
-                            <attributedString key="attributedText">
-                                <fragment content="④">
-                                    <attributes>
-                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="9" name="PingFangSC-Regular"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="④" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuv-fz-14S">
+                            <rect key="frame" x="68.5" y="4" width="11.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -41,11 +34,11 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="82" id="KL6-Cn-t0N"/>
                         <constraint firstAttribute="height" constant="48" id="VdJ-ct-c29"/>
-                        <constraint firstItem="Nuv-fz-14S" firstAttribute="top" secondItem="8RK-Ni-gLq" secondAttribute="top" constant="2" id="hbg-Da-OrP"/>
+                        <constraint firstItem="Nuv-fz-14S" firstAttribute="top" secondItem="8RK-Ni-gLq" secondAttribute="top" constant="4" id="hbg-Da-OrP"/>
                         <constraint firstAttribute="trailing" secondItem="Nuv-fz-14S" secondAttribute="trailing" constant="2" id="pPq-Vq-MpA"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="1-13, J, Q, K" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="p89-r2-azV">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="1-13, A, J, Q, K" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="p89-r2-azV">
                     <rect key="frame" x="166" y="0.0" width="82" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
