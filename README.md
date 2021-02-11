@@ -38,11 +38,11 @@ Card values 1, 6, 7 and 9 have 4 solutions for 24. These are the solutions:
 
 4. ((9 - 6) * (7 + 1)) = 24
 
-##How to play Twenty Something?
+## How to play Twenty Something?
 
 This game is the same as Twenty Four with one key difference.
 
-###How does a round of Twenty Something work?
+### How does a round of Twenty Something work?
 
 **1. Flip 4 cards.**
 

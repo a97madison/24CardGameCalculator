@@ -147,6 +147,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let color = Constants.global.getTextColor()
         solutionsTableView.layer.borderWidth = 1.0
         solutionsTableView.layer.borderColor = color.cgColor
+        solutionsTableView.layer.cornerRadius = 2.5
+        solutionsTableView.clipsToBounds = true
 //        solutionsTableView.layer.border
     }
     
