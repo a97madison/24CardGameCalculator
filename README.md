@@ -1,6 +1,6 @@
 # 24CardGameCalculator
 
-This repo is an ios application written in swift used to calculate the solutions for the card game Twenty Four. Rules for the card game can be found on the tutorial screen within the application (soon) or below. Under the tutorial for the card game, there is documentation for the structure of the application.
+This repo is an ios application written in swift used to calculate the solutions for the card game Twenty Four. Rules for the card game can be found on the tutorial screen within the application (soon) or below. Under the tutorial for the card game, there is documentation for the codebase's stucture.
 
 
 
