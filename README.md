@@ -2,7 +2,7 @@
 
 This repo is an ios application written in swift used to calculate the solutions for the card game Twenty Four. Rules for the card game can be found on the tutorial screen within the application (soon) or below:
 
-## How to play Twenty Four?
+## TUTORIAL... How to play Twenty Four?
 
 This is a card game where players (1+) complete rounds. The winner of each round gets a point.
 
@@ -75,3 +75,53 @@ Card values 1, 6, 7 and 9 have 3 solutions for TARGET = 27. These are the soluti
 2. (6 * (7 - 1) - 9) = 27
 
 3. ((7 - 1) * 6 - 9) = 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## DOCUMENTATION
+
+There are three pages, each with view controllers (in PageViewControllers folder): **ViewController, TutorialViewController, InfoViewController**.
+
+**TutorialViewController** and **InfoViewController** are simple view controllers; navigate to these pages from **ViewController** (the app's main page); both of these pages have back buttons for navigation back to the app's main page.
+
+**ViewController** is for the app's main page and it's UI makes use of the views in the **Subviews** folder
+
+### ViewController (the app's main page)
+
+The app's main view has three sections: headerSectionView, inputsSectionView, solutionsSectionView.
+
+The headerSectionView section contains:
+- three **ReusableButtonView** subviews (buttons)
+- one UIButton.
+
+The inputsSectionView section contains:
+- one **TargetTextFieldView** subview (a subview tha)
+- four **ReusableTextFieldView** subviews (text fields)
+- two **ReusableButtonView** subviews (buttons)
+
+The solutionsSectionView section contains:
+- one UITextView
+- ome **ReusableButtonView** subview (button)
+- one UITableView
+
+### Subviews
+
+- **ReusableButtonView** subview contains a button; this button has a variable label and a variable onClick handler
+- **ReusableTextFieldView** subview contains a textfield: each textfield has a variable label
+- **SingleSolutionCell** subview just contains simple UILabels, labels are variable
+- **TargetTextFieldView** subview is togglable based om which calculator is being used
+- **TooltipView** subview just contains a text view, shows temporarily when the user clicks "Calculate Solutions" button while it is disabled
